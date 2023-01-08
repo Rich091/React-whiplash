@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Richard Barnett, Branden TenBrink",
+  "author": "Richard Barnett",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.20.7",
