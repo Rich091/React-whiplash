@@ -1,8 +1,17 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
+
 import React, { useState } from 'react';
-import { css } from '@emotion/react';
+import { css, jsx } from '@emotion/react';
+
+import Button from '../../components/button/Button';
 
 const styles = {
-
+    h2Styles: css({
+        fontSize: '18px',
+        fontWeight: 500,
+        marginBottom: '16px'
+    })
 }
 
 const Home = () => {
@@ -26,7 +35,10 @@ const Home = () => {
     return (
         <div>
             <h1>Counter</h1>
-            <div>You have clicked {count} times!!</div>
+            <div css={styles.h2Styles}>You have clicked {count} times!!</div>
+            <Button disabled={false} onClick={increment}>+</Button>
+            <Button disabled={false} onClick={decrement}>-</Button>
+            <Button disabled={false} onClick={reset}>Reset</Button>
         </div>
     )
 }
